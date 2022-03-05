@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 676px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56px repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 30px 30px 26px 30px;
+}
+
+.video-grande {
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+
+.video-grande .informacoes h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 16px;
+}
+
+.video-grande .informacoes p {
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 13px;
+}
+
+.video-lateral {
+    display: flex;
+    width: 300px;
+    height: 71px;
+}
+
+.video-lateral .informacoes {
+    margin-left: 4px;
+}
+
+.video-lateral .informacoes h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.video-lateral .informacoes p {
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.propaganda {
+    width: 270px;
+    height: 56px;
+    background: url(https://via.placeholder.com/270x56) center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propaganda p {
+    font-size: 11px;
+}
